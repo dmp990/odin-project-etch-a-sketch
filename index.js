@@ -41,7 +41,7 @@ function generateGrid() {
       const newDiv2 = document.createElement("div");
       newDiv2.classList.add("peachpuff-box");
       newDiv2.addEventListener("mouseenter", mouseEntered);
-      newDiv2.addEventListener("mouseleave", mouseLeft);
+      //newDiv2.addEventListener("mouseleave", mouseLeft);
       newDiv2.style.width = `${sideLength / grid_size}px`;
       newDiv2.style.height = `${sideLength / grid_size}px`;
       newDiv.appendChild(newDiv2);
@@ -63,8 +63,4 @@ function mouseEntered(e) {
     l: Math.random() * (80 - 40) + 80,
   };
   e.srcElement.style.backgroundColor = `rgb(${bgColor.h}, ${bgColor.s}, ${bgColor.l})`;
-}
-
-function mouseLeft(e) {
-  e.srcElement.classList.toggle("background-azure");
 }
