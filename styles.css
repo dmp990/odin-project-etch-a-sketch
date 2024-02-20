@@ -24,3 +24,15 @@
 .background-azure {
     background-color: azure;
 }
+
+button {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid aliceblue;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+}

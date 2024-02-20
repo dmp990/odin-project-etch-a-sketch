@@ -11,11 +11,14 @@ let input = 0;
 button.addEventListener("click", () => {
   while (input < 1 || input > 100) {
     input = prompt("Enter number upto 100");
+    if (input === null) break;
   }
-  removeGrid();
-  grid_size = input;
-  input = 0;
-  generateGrid();
+  if (input !== null) {
+    removeGrid();
+    grid_size = input;
+    input = 0;
+    generateGrid();
+  }
 });
 
 // Add as first child
