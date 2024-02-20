@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+.grid-container {
+    /*border: 2px solid peachpuff;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.salmon-box {
+    /*border: 1px solid salmon;*/
+    display: flex;
+    width: 640px;
+}
+
+.peachpuff-box {
+    border: 1px solid peachpuff;
+}
+
+.background-azure {
+    background-color: azure;
+}
